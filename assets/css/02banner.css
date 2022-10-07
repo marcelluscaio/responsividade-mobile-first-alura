@@ -1,0 +1,36 @@
+.banner--titulo,
+.banner--texto{
+   padding: 0.125em 0;
+}
+
+.banner--titulo{
+   font-size: 1.13rem;
+   font-weight: 700;
+}
+
+.banner--texto{
+   margin: 0.5em 1.85em 1.5em;
+   font-weight: 500;
+}
+
+.banner--busca{
+   background-color: transparent;
+   color: var(--white);
+   border-radius: 1.325rem;
+   border: 1px solid #fff;
+   text-align: center;   
+   font-family: var(--fonte);
+
+   height: 2.75rem;
+   width: 100%;   
+}
+
+.banner--busca::placeholder{
+   color: var(--white);
+   text-align: center;
+   font-size: .875rem;
+
+   background-image: url("../img/Vector.svg");
+   background-repeat: no-repeat;
+   background-position: 3em
+}

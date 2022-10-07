@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Alura Books | Caio Cabral</title>
+   <link rel="stylesheet" href="assets/css/reset.css">   
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+   <link rel="stylesheet" href="assets/css/00style.css">
+</head>
+<body>
+   <header class="header">
+      <div class="container">
+         <input type="checkbox" id="menu" class="menu-botao">
+         <label for="menu"> 
+            <span class="menu container--img"></span>
+            <span class="menu-invertido container--img"></span>
+         </label>
+         <ul class="menu-lista">
+            <li class="menu-lista--titulo">Categorias</li>
+            <li class="menu-lista--item">
+               <a href="#" class="menu-lista--link">Programação</a>
+            </li>
+            <li class="menu-lista--item">
+               <a href="#" class="menu-lista--link">Front-end</a>
+            </li>
+            <li class="menu-lista--item">
+               <a href="#" class="menu-lista--link">Infraestrutura</a>
+            </li>
+            <li class="menu-lista--item">
+               <a href="#" class="menu-lista--link">Negócios</a>
+            </li>
+            <li class="menu-lista--item">
+               <a href="#" class="menu-lista--link">Design e UX</a>
+            </li>
+         </ul>
+         <img src="assets/img/Logo.svg" alt="" class="container--img">
+      </div>
+      <div class="container">         
+         <a href="#"><img src="assets/img/Favoritos.svg" alt="Meus favoritos" class="container--img"></a>         
+         <a href="#"><img src="assets/img/Compras.svg" alt="Minha sacola" class="container--img"></a>
+         <a href="#"><img src="assets/img/Usuário.svg" alt="Meu usuário" class="container--img"></a>
+      </div>
+   </header>
+   <section class="banner">
+      <h2 class="banner--titulo">Já sabe por onde começar?</h2>
+      <p class="banner--texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+      <input type="search" placeholder="Qual será sua próxima leitura?" class="banner--busca">
+   </section>
+   <section>
+      <h2 class="slider--titulo">Últimos Lançamentos</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+         <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
+
+         <!-- Additional required wrapper -->
+         <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="assets/img/ApacheKafka.png" alt="Livro Apache"></div>
+            <div class="swiper-slide"><img src="assets/img/Javascript.png" alt="Livro Javascript"></div>
+            <div class="swiper-slide"><img src="assets/img/Nodejs.png" alt="Livro Node"></div>
+            <div class="swiper-slide"><img src="assets/img/Portugol.png" alt="Livro Portugol"></div>
+            <div class="swiper-slide"><img src="assets/img/ReactNative.png" alt="Livro React"></div>
+         </div>
+
+         <!-- If we need navigation buttons -->
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+      </div>
+   </section>
+   
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script>
+      const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      //direction: 'vertical',
+      loop: true,
+      spaceBetween: 0,
+      slidesPerView: 2,
+      
+
+      // Navigation arrows
+      navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      //scrollbar: {
+      //   el: '.swiper-scrollbar',
+      //},
+
+      pagination: {
+         el: '.swiper-pagination',
+         type: 'bullets',
+      },
+
+      });
+   </script>
+</body>
+</html>

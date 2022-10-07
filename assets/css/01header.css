@@ -1,0 +1,83 @@
+.container{
+   display: flex;
+   align-items: center;
+
+   isolation: isolate;
+}
+
+.menu-botao,
+.menu-lista{
+   display: none;
+}
+
+.menu-botao:checked ~ .menu-lista{
+   display: block;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: 66vw;
+   
+   background-color: var(--white);
+}
+
+.menu-lista--titulo{
+   margin-top: 0.5rem;
+   font-weight: 700;
+}
+
+.menu-lista--titulo,
+.menu-lista--item{
+   padding: 1em 1.5em;
+}
+
+.menu-lista--titulo{
+   color: var(--orange);
+   font-weight: 700;
+}
+
+.menu-lista--link{
+   background: var(--azul-degrade);
+   -webkit-background-clip: text;   
+   background-clip: text;
+   color: transparent;
+   text-transform: uppercase;
+}
+
+.menu,
+.menu-invertido{   
+   display: inline-block;   
+   --tamanho-menu: 2.5rem;   
+   height: var(--tamanho-menu);
+   width: var(--tamanho-menu);
+   margin-right: 1rem;
+}
+
+.menu{
+   position: relative;
+   background-image: url("../img/Menu.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.menu-invertido{
+   background-image: var(--azul-degrade);
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 16.5%;
+   z-index: -1;
+   display: none;
+}
+
+.menu-botao:checked ~ label > .menu{
+   filter:brightness(0) invert(1);
+}
+
+.menu-botao:checked ~ label > .menu-invertido{
+   display: inline-block;
+}
+
+.container--img{   
+   padding: 0.5em;
+}
