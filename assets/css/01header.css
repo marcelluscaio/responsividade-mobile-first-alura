@@ -1,7 +1,6 @@
 .container{
    display: flex;
-   align-items: center;
-
+   align-items: center;   
    isolation: isolate;
 }
 
@@ -43,17 +42,13 @@
    text-transform: uppercase;
 }
 
-.menu,
-.menu-invertido{   
-   display: inline-block;   
-   --tamanho-menu: 2.5rem;   
+.menu{   
+   display: inline-block; 
    height: var(--tamanho-menu);
    width: var(--tamanho-menu);
    margin-right: 1rem;
-}
-
-.menu{
    position: relative;
+
    background-image: url("../img/Menu.svg");
    background-repeat: no-repeat;
    background-position: center;
@@ -65,16 +60,16 @@
    top: 0;
    left: 0;
    height: 100%;
-   width: 16.5%;
+   width: calc(var(--tamanho-menu)*1.7);
    z-index: -1;
    display: none;
 }
 
-.menu-botao:checked ~ label > .menu{
+.menu-botao:checked ~ label > .menu--wrapper > .menu{
    filter:brightness(0) invert(1);
 }
 
-.menu-botao:checked ~ label > .menu-invertido{
+.menu-botao:checked ~ label > .menu--wrapper > .menu-invertido{
    display: inline-block;
 }
 
