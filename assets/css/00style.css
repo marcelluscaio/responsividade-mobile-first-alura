@@ -1,11 +1,13 @@
 @import url("01header.css");
 @import url("02banner.css");
 @import url("03slider.css");
+@import url("04card.css");
 
 :root{
    --bg-color: #EBECEE;
    --white: #FFFFFF;
    --orange: #EB9B00;
+   --azul: #002F52;
    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
    --fonte: 'Poppins', sans-serif;
 
@@ -46,4 +48,14 @@ body{
    padding: 2em 1.5em;
    text-align: center;
    line-height: 1.5em;
+}
+
+.card{
+   background-color: var(--white);
+   border-radius: 0.625rem;
+   box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
+
+   width: 90%;
+   margin: 1.25rem auto;
+   padding: 1.25em 1em;
 }

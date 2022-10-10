@@ -47,7 +47,6 @@
    height: var(--tamanho-menu);
    width: var(--tamanho-menu);
    margin-right: 1rem;
-   position: relative;
 
    background-image: url("../img/Menu.svg");
    background-repeat: no-repeat;

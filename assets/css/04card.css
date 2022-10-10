@@ -1,0 +1,60 @@
+.card--linha{
+   display: flex;
+   justify-content: space-between;   
+}
+
+.card--linha-um{
+   gap: 1rem;
+}
+
+
+.card--linha--textos--chamada{
+   color: var(--orange);
+   font-weight: 700;
+   font-size: 1rem;
+   line-height: 1.5rem;
+}
+
+.card--linha--textos--titulo{
+   color: var(--azul);
+   font-weight: 700;
+   font-size: 1.125rem;
+   line-height: 1.625rem;
+
+   margin: 0.5rem auto;
+}
+
+.card--linha--textos--descricao{
+   font-weight: 400;
+   font-size: .865rem;
+   line-height: 1.25rem;
+   opacity: .85;
+}
+
+.card--linha--imagem{
+   height: 100%;
+}
+
+.card--linha-dois{
+   align-items: center;
+   margin-top: .75rem;
+}
+
+.card--linha--icones{
+   display: flex;
+   gap: 1rem;
+}
+
+.card--linha--icones--icone{
+   width: 2.5rem;
+}
+
+.card--linha--botao{
+   color: var(--white);
+   background-color: var(--orange);
+   font-weight: bold;
+   text-decoration: none;
+
+   padding: 1em 2.2em;
+}
+
