@@ -58,3 +58,23 @@
    padding: 1em 2.2em;
 }
 
+.chamada-autora{
+   position: relative;
+   margin-top: 1rem;
+}
+
+.chamada-autora::before{
+   content: "";
+   background-image: url("../img/Star\ 5.svg");
+   background-position: bottom left;
+   background-repeat: repeat-x;
+   
+   position: absolute;
+   top: -1.5rem;
+   left: 0;
+   width: 4.5rem;
+   height: 1rem;
+
+
+}
+
