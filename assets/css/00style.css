@@ -3,6 +3,8 @@
 @import url("03slider.css");
 @import url("04card.css");
 @import url("05topicos.css");
+@import url("06contato.css");
+@import url("07rodape.css");
 
 :root{
    --bg-color: #EBECEE;
@@ -64,4 +66,14 @@ body{
 .topicos{
    background-image: var(--azul-degrade);
    padding: 1.5em 1em;
+}
+
+.contato{
+   background-color: var(--white);
+   padding: 1.5em 1.5em 1.865em;
+}
+
+.rodape{
+   border-top: 1px solid rgba(0,0,0,.25);
+   background-color: var(--white) ;
 }
