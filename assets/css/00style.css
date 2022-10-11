@@ -2,6 +2,7 @@
 @import url("02banner.css");
 @import url("03slider.css");
 @import url("04card.css");
+@import url("05topicos.css");
 
 :root{
    --bg-color: #EBECEE;
@@ -58,4 +59,9 @@ body{
    width: 90%;
    margin: 1.25rem auto;
    padding: 1.25em 1em;
+}
+
+.topicos{
+   background-image: var(--azul-degrade);
+   padding: 1.5em 1em;
 }
